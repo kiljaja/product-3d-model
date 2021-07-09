@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Bike Shop",
+  "name": "A bike shop with a 3D model",
   "icons": [
     {
       "src": "favicon.ico",
