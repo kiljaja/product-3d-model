@@ -1,9 +1,11 @@
 {
-  "name": "bike-shop-3d",
+  "name": "product-3d-model",
+  
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.2.0",
+    "@react-three/drei": "^7.0.6",
     "@react-three/fiber": "^7.0.4",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -13,6 +15,7 @@
     "@types/react": "^17.0.14",
     "@types/react-dom": "^17.0.9",
     "@types/three": "^0.130.0",
+    "leva": "^0.9.13",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -24,7 +27,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +51,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
+    "gh-pages": "^3.2.3",
     "postcss": "^7.0.36",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4"
   }
